@@ -1,0 +1,1 @@
+{% extends "base.html" %}{% block content %}<div class="container py-5"><div class="card p-4 mx-auto" style="max-width:600px"><h2>My Profile</h2><p><b>Username:</b> {{ user.username }}</p><form method="post">{% csrf_token %}{{ form.as_p }}<button class="btn btn-danger">Update Profile</button></form></div></div>{% endblock %}
